@@ -5,6 +5,28 @@ html {
 body {
     min-width: 320px;
     overflow-x: hidden;
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: normal;
+    color: #fff;
+}
+
+.input {
+    width: 100%;
+    height: 43px;
+    padding: 0 12px;
+    background-color: #45433F;
+    border-radius: 4px;
+    border: 1px solid gray;
+}
+
+
+.iti {
+    width: 100%;
+    --iti-border-color: #5b5b5b;
+    --iti-dialcode-color: #999999;
+    --iti-dropdown-bg: #0d1117;
+    --iti-arrow-color: #aaaaaa;
+    --iti-hover-color: #30363d;
+    --iti-path-globe-1x: url("path/to/globe_light.webp");
+    --iti-path-globe-2x: url("path/to/globe_light@2x.webp");
 }

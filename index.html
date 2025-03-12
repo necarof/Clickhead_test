@@ -12,12 +12,78 @@
     <link rel="manifest" href="/resources/images/favicon/site.webmanifest" />
 
     <title>Clickhead test</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/css/intlTelInput.css">
     <link rel="stylesheet" href="/resources/styles/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/intlTelInput.min.js"></script>
     <script src="/resources/scripts/main.js" defer="defer"></script>
 </head>
 <body>
     <main class="main">
-        
+        <section class="main__text">
+            <h1 class="main__text-title">Приветственный бонус</h1>
+            <h2 class="main__text-subtitle">до <span>30 000 ₽</span></h2>
+            <div class="main__text-bonus">
+                <img class="main__text-bonus-big" src="/resources/images/250.svg" alt="250">
+                <img class="main__text-bonus-small" src="/resources/images/250_small.svg" alt="250">
+            </div>
+            <ul class="main__text-list">
+                <li class="main__text-list-item">
+                    <span class="main__text-list-number">1</span>
+                    <span class="main__text-list-description">
+                        Зарегистрируйся
+                    </span>
+                </li>
+                <li class="main__text-list-item">
+                    <span class="main__text-list-number">2</span>
+                    <span class="main__text-list-description">
+                        Пополни баланс
+                    </span>
+                </li>
+                <li class="main__text-list-item">
+                    <span class="main__text-list-number">3</span>
+                    <span class="main__text-list-description">
+                        Получи бонус
+                    </span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="main__form">
+            <div class="form">
+                <div class="form__registration-wrapper">
+                    <h2 class="form__title">РЕГИСТРАЦИЯ</h2>
+                    <div class="form__tabs">
+                        <span class="form__tab form__tab--active">Телефон</span>
+                        <span class="form__tab">E-mail</span>
+                    </div>
+                    <form action="#" class="form__registration">
+                        <input class="input" type="tel" name="phone" id="reg_phone">
+                        <div class="input">
+                            <input type="password" name="password" id="reg_password">
+                        </div>
+                        <div class="input">
+                            <select name="select" id="reg_select">
+                                <option value="1">Russian Ruble (RUB)</option>
+                                <option value="2">Dollar</option>
+                                <option value="3">Euro</option>
+                            </select>
+                        </div>
+                        <button class="form__btn" type="submit">Зарегистрироваться</button>
+                        <span class="form__registration-followin">
+                            Уже есть аккаунт? <span id="reg_followin">Войти</span>
+                        </span>
+                        <div class="form__registration-checkbox">
+                            <input type="checkbox" name="checkbox" id="reg_checkbox">
+                            <span>Я согласен с <a href="#" target="_blank">Условиями и положениями</a> и мне 18+ лет.</span>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form__authorization-wrapper">
+                    <h2 class="form__title">Авторизация</h2>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>

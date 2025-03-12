@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf) format('truetype'),
+        url(../fonts/Roboto-Regular.woff) format('woff');
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter-Regular.otf) format('opentype'),
+        url(../fonts/Inter-Regular.woff) format('woff');
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Intro";
+    src: url(../fonts/IntroDemo-BlackCAPS.otf) format('opentype'),
+        url(../fonts/IntroDemo-BlackCAPS.woff) format('woff');
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
