@@ -10,17 +10,50 @@ body {
     color: #fff;
 }
 
-.input {
-    width: 100%;
-    height: 43px;
-    padding: 0 12px;
-    background-color: #45433F;
-    border-radius: 4px;
-    border: 1px solid gray;
+a {
+    color: #F2F2F2;
+
+    &:visited {
+        color: #F2F2F2;
+    }
 }
 
+.input {
+    margin-bottom: 16px;
+    width: 100%;
+    height: 43px;
+    background-color: #45433F;
+    border-radius: 5px;
+    border: 1px solid gray;
+    position: relative;
+
+    input {
+        padding: 0 14px 0 38px;
+        width: 100%;
+        height: 100%;
+        background-color: #45433F;
+        border: 0;
+        border-radius: 5px;
+    }
+
+    select {
+        width: 100%;
+        height: 100%;
+        background-color: #45433F;
+        color: #fff;
+    }
+}
+
+.btn {
+    height: 46px;
+    width: 100%;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #F8E4C6, #F1CC92);
+    border: 0;
+}
 
 .iti {
+    margin-bottom: 16px;
     width: 100%;
     --iti-border-color: #5b5b5b;
     --iti-dialcode-color: #999999;
@@ -29,4 +62,10 @@ body {
     --iti-hover-color: #30363d;
     --iti-path-globe-1x: url("path/to/globe_light.webp");
     --iti-path-globe-2x: url("path/to/globe_light@2x.webp");
+}
+
+.iti__search-input {
+    height: 48px;
+    background-color: #45433F;
+    color: white;
 }

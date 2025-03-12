@@ -394,16 +394,47 @@ body {
   color: #fff;
 }
 
+a {
+  color: #F2F2F2;
+}
+a:visited {
+  color: #F2F2F2;
+}
+
 .input {
+  margin-bottom: 16px;
   width: 100%;
   height: 43px;
-  padding: 0 12px;
   background-color: #45433F;
-  border-radius: 4px;
+  border-radius: 5px;
   border: 1px solid gray;
+  position: relative;
+}
+.input input {
+  padding: 0 14px 0 38px;
+  width: 100%;
+  height: 100%;
+  background-color: #45433F;
+  border: 0;
+  border-radius: 5px;
+}
+.input select {
+  width: 100%;
+  height: 100%;
+  background-color: #45433F;
+  color: #fff;
+}
+
+.btn {
+  height: 46px;
+  width: 100%;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #F8E4C6, #F1CC92);
+  border: 0;
 }
 
 .iti {
+  margin-bottom: 16px;
   width: 100%;
   --iti-border-color: #5b5b5b;
   --iti-dialcode-color: #999999;
@@ -414,26 +445,37 @@ body {
   --iti-path-globe-2x: url("path/to/globe_light@2x.webp");
 }
 
+.iti__search-input {
+  height: 48px;
+  background-color: #45433F;
+  color: white;
+}
+
 .main {
-  min-height: 100dvh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 60px 0 76px;
   background-image: url("/resources/images/main_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
+.main .container {
+  min-height: 100dvh;
+  margin: auto;
+  max-width: 1440px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px 0 76px;
+}
 @media screen and (max-width: 1280px) {
-  .main {
+  .main .container {
     padding: 100px 0;
     flex-direction: column;
     row-gap: 100px;
   }
 }
 @media screen and (max-width: 640px) {
-  .main {
+  .main .container {
     padding: 100px 0 0;
   }
 }
@@ -593,6 +635,41 @@ body {
   width: 100%;
   height: 3px;
   background-color: #F1CC92;
+}
+.form__registration-followin {
+  margin: 16px 0 16px;
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  opacity: 0.7;
+}
+.form__registration-followin-btn {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.form__registration-checkbox {
+  display: flex;
+  align-items: start;
+  column-gap: 6px;
+}
+.form__registration-checkbox input {
+  appearance: none;
+  border-radius: 4px;
+  padding: 1px;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+  accent-color: #272828;
+  background-color: #272828;
+  border: 1px solid gray;
+}
+.form__registration-checkbox input:checked {
+  background-color: #F1CC92;
+}
+.form__registration-checkbox span {
+  font-size: 14px;
+  display: block;
+  opacity: 0.7;
 }
 
 /*# sourceMappingURL=main.css.map */

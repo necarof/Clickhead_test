@@ -49,4 +49,45 @@
             background-color: #F1CC92;
         }
     }
+
+    &__registration-followin {
+        margin: 16px 0 16px;
+        display: block;
+        font-size: 14px;
+        text-align: center;
+        opacity: 0.7;
+    }
+
+    &__registration-followin-btn {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    &__registration-checkbox {
+        display: flex;
+        align-items: start;
+        column-gap: 6px;
+
+        input {
+            appearance: none;
+            border-radius: 4px;
+            padding: 1px;
+            margin-top: 2px;
+            width: 15px;
+            height: 15px;
+            accent-color: #272828;
+            background-color: #272828;
+            border: 1px solid gray;
+
+            &:checked {
+                background-color: #F1CC92;
+            }
+        }
+
+        span {
+            font-size: 14px;
+            display: block;
+            opacity: 0.7;
+        }
+    }
 }
