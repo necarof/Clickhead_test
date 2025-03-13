@@ -9,8 +9,13 @@
         background-color: #272828;
 
         @media screen and (max-width: 640px) {
+            padding: 20px;
             min-width: auto;
         }
+    }
+
+    &__authorization-wrapper {
+        display: none;
     }
 
     &__title {
@@ -18,6 +23,10 @@
         font-size: 24px;
         text-align: center;
         text-transform: uppercase;
+
+        @media screen and (max-width: 640px) {
+            font-size: 20px;
+        }
     }
 
     &__tabs {
@@ -50,6 +59,29 @@
         }
     }
 
+    &__key-icon {
+        width: 18px;
+        height: 20px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 12px;
+        background-image: url("/resources/images/key.svg");
+        background-size: cover;
+    }
+
+    &__key-eye-icon {
+        width: 18px;
+        height: 12px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 12px;
+        background-image: url("/resources/images/eye.svg");
+        background-size: cover;
+        cursor: pointer;
+    }
+
     &__registration-followin {
         margin: 16px 0 16px;
         display: block;
@@ -75,6 +107,7 @@
             margin-top: 2px;
             width: 15px;
             height: 15px;
+            min-width: 15px;
             accent-color: #272828;
             background-color: #272828;
             border: 1px solid gray;

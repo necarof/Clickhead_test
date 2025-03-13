@@ -417,6 +417,10 @@ a:visited {
   background-color: #45433F;
   border: 0;
   border-radius: 5px;
+  color: white;
+}
+.input input::placeholder {
+  color: gray;
 }
 .input select {
   width: 100%;
@@ -456,6 +460,87 @@ a:visited {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  overflow: hidden;
+}
+.main .bg-roulette {
+  width: 282px;
+  height: 279px;
+  background-image: url("/resources/images/roulette.svg");
+  background-size: cover;
+  position: absolute;
+  left: -139px;
+  top: -107px;
+  transform: rotate(8deg);
+}
+@media screen and (max-width: 640px) {
+  .main .bg-roulette {
+    width: 138px;
+    height: 136px;
+    left: -52px;
+    top: -42px;
+  }
+}
+.main .bg-dice {
+  width: 224px;
+  height: 224px;
+  background-image: url("/resources/images/dice.svg");
+  background-size: cover;
+  position: absolute;
+  bottom: -90px;
+  left: 30%;
+}
+@media screen and (max-width: 1280px) {
+  .main .bg-dice {
+    display: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  .main .bg-dice {
+    display: block;
+    width: 122px;
+    height: 122px;
+    bottom: 426px;
+  }
+}
+.main .bg-chip {
+  width: 158px;
+  height: 158px;
+  background-image: url("/resources/images/chip.svg");
+  background-size: cover;
+  position: absolute;
+  right: 35%;
+  top: 89px;
+}
+@media screen and (max-width: 1280px) {
+  .main .bg-chip {
+    top: -30px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .main .bg-chip {
+    top: 10px;
+    right: 12%;
+    width: 77px;
+    height: 77px;
+  }
+}
+.main .bg-chip2 {
+  width: 154px;
+  height: 154px;
+  background-image: url("/resources/images/chip.svg");
+  background-size: cover;
+  position: absolute;
+  right: -64px;
+  bottom: 242px;
+  transform: rotate(-81deg);
+}
+@media screen and (max-width: 640px) {
+  .main .bg-chip2 {
+    width: 60px;
+    height: 60px;
+    right: 0;
+    bottom: 554px;
+  }
 }
 .main .container {
   min-height: 100dvh;
@@ -586,7 +671,9 @@ a:visited {
 }
 @media screen and (max-width: 640px) {
   .main__form {
+    position: relative;
     width: 100%;
+    z-index: 10;
   }
 }
 
@@ -601,14 +688,23 @@ a:visited {
 }
 @media screen and (max-width: 640px) {
   .form__registration-wrapper, .form__authorization-wrapper {
+    padding: 20px;
     min-width: auto;
   }
+}
+.form__authorization-wrapper {
+  display: none;
 }
 .form__title {
   margin-bottom: 25px;
   font-size: 24px;
   text-align: center;
   text-transform: uppercase;
+}
+@media screen and (max-width: 640px) {
+  .form__title {
+    font-size: 20px;
+  }
 }
 .form__tabs {
   margin-bottom: 25px;
@@ -636,6 +732,27 @@ a:visited {
   height: 3px;
   background-color: #F1CC92;
 }
+.form__key-icon {
+  width: 18px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12px;
+  background-image: url("/resources/images/key.svg");
+  background-size: cover;
+}
+.form__key-eye-icon {
+  width: 18px;
+  height: 12px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 12px;
+  background-image: url("/resources/images/eye.svg");
+  background-size: cover;
+  cursor: pointer;
+}
 .form__registration-followin {
   margin: 16px 0 16px;
   display: block;
@@ -659,6 +776,7 @@ a:visited {
   margin-top: 2px;
   width: 15px;
   height: 15px;
+  min-width: 15px;
   accent-color: #272828;
   background-color: #272828;
   border: 1px solid gray;
